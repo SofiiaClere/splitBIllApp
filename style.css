@@ -81,6 +81,10 @@ input{
     border: 1px solid black;
 }
 
+button{
+  width:70%;
+}
+
 @media all and (max-width:800px){
   
   
@@ -100,7 +104,7 @@ input{
   
   #showTotalAmount{
     width:20%;
-  
+}
 }
 
 @media all and (max-width:500px){
@@ -129,6 +133,7 @@ input{
 }
   #showTotalAmount{
     width:30%;
+    flex-wrap:wrap;
   
 }
   
