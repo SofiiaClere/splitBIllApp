@@ -1,156 +1,149 @@
 body{
-    background-image: url("https://images.unsplash.com/photo-1599173687303-7e1eb50f1e60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color:rgb(94, 97, 93);
-    height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1599173687303-7e1eb50f1e60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color:rgb(94, 97, 93);
+  height: 100vh;
 }
 
 #container {
-    background-color:rgba(243, 149, 196, 0.808);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 800px;
-    height: 950px;
-    color: white;
-    position: absolute;
-    margin: 50px;
-    border: 3px solid white;
-    --mask: 
-    conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/10.00px 51% repeat-x,
-    conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/10.00px 51% repeat-x;
-    -webkit-mask: var(--mask);
-          mask: var(--mask);
+  background-color:rgba(243, 149, 196, 0.808);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 750px;
+  color: white;
+  position: absolute;
+  margin: 10px;
+  border: 3px solid none;
+  --mask: 
+  conic-gradient(from 135deg at top, #0000,#000 1deg 89deg,#0000 90deg) top/10.00px 51% repeat-x,
+  conic-gradient(from -45deg at bottom, #0000,#000 1deg 89deg,#0000 90deg) bottom/10.00px 51% repeat-x;
+  -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
 form{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 20px;
-    padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 20px;
+  padding: 20px;
 }
 
 h1{
-  font-family: 'Ubuntu', sans-serif;
-    color: #ffffff;
-    align-self: center;
-    font-size: 35px;
-    
-}
-
-p, input, select, button, span{
-    font-size: 20px;
+font-family: 'Ubuntu', sans-serif;
+  color: #ffffff;
+  align-self: center;
+  
 }
 
 input{
   font-family: 'Ubuntu', sans-serif;
-    padding: 5px;
-
+  padding: 5px;
+  font-size: 30px;
 }
 
 #addTip {
-    background-color:#78DEC7;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    font-family: 'Ubuntu', sans-serif;
-    
+  background-color:#78DEC7;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  
 }
 
 #btn {
-    background-color: #F7DBF0;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    margin-top: 10px;
-    font-family: 'Ubuntu', sans-serif;
+  background-color: #F7DBF0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #tip{
-  font-family: 'Ubuntu', sans-serif;
-    display: none;
+font-family: 'Ubuntu', sans-serif;
+  display: none;
 }
 
 #showTotalAmount{
-    display: flex;
+  display: flex;
 }
 
 #totalTip, #billSplit, #totalAmount{
-  font-family: 'Ubuntu', sans-serif;
-    background-color: rgba(147,198,142,0.9);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid black;
+font-family: 'Ubuntu', sans-serif;
+  background-color: rgba(147,198,142,0.9);
+  margin: 20px;
+  padding: 35px;
+  border-radius: 10px;
+  border: 1px solid white;
 }
 
 button{
-  width:70%;
+width:70%;
 }
 
 @media all and (max-width:800px){
-  
-  #container{
-    margin:15px;
-    width: 700px;
-    height: 900px;
-  }
-  
-  h1{
-    font-size:20px;
-    align-self:flex-start;
-    margin-left:20%;
-  }
-  
-  p, input, select, button, span{
-    font-size: 18px;
+
+#container{
+  margin:15px;
+  width: 700px;
+  height: 900px;
 }
-  
-  button{
-  width:50%
-  }
-  
-  #showTotalAmount{
-    width:20%;
+
+h1{
+  font-size:20px;
+  align-self:flex-start;
+  margin-left:20%;
 }
-  
+
+p, input, select, button, span{
+  font-size: 18px;
+}
+
+button{
+width:50%
+}
+
+#showTotalAmount{
+  width:20%;
+}
+
 }
 
 @media all and (max-width:500px){
-  
-  #container{
-      margin: 0px;
-      width: 450px;
-      height: 800px;
+
+#container{
+    margin: 0px;
+    width: 450px;
+    height: 800px;
+}
+
+  h1{
+  font-size:15px;
+  margin-left:15%;
+}
+
+p, input, select, button, span{
+  font-size: 14px;
+}
+
+button{
+width:30%;
+}
+
+#totalTip, #billSplit, #totalAmount{
+  background-color: rgba(147,198,142,0.9);
+  margin: 10px;
+  padding: 10px;
   }
 
-    h1{
-    font-size:15px;
-    margin-left:15%;
-  }
-  
-  p, input, select, button, span{
-    font-size: 14px;
-}
-  
-  button{
-  width:30%;
-  }
-  
-  #totalTip, #billSplit, #totalAmount{
-    background-color: rgba(147,198,142,0.9);
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    }
-  
-  #showTotalAmount{
-    width:35%;
-    flex-wrap:wrap;
+#showTotalAmount{
+  width:35%;
+  flex-wrap:wrap;
 }
 }
