@@ -12,13 +12,17 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 900px;
-    height: 1125px;
-    border-radius: 40px;
+    width: 800px;
+    height: 950px;
     color: white;
     position: absolute;
     margin: 50px;
     border: 3px solid white;
+    --mask: 
+    conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/10.00px 51% repeat-x,
+    conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/10.00px 51% repeat-x;
+    -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
 
 form{
@@ -90,9 +94,12 @@ button{
 
 @media all and (max-width:800px){
   
-  #container {
-    margin: 5px;
-
+  #container{
+    margin:15px;
+    width: 700px;
+    height: 900px;
+  }
+  
   h1{
     font-size:20px;
     align-self:flex-start;
@@ -110,13 +117,20 @@ button{
   #showTotalAmount{
     width:20%;
 }
+  
 }
 
 @media all and (max-width:500px){
+  
+  #container{
+      margin: 0px;
+      width: 450px;
+      height: 800px;
+  }
 
     h1{
     font-size:15px;
-    margin-left:10%;
+    margin-left:15%;
   }
   
   p, input, select, button, span{
@@ -124,7 +138,7 @@ button{
 }
   
   button{
-  width:20%;
+  width:30%;
   }
   
   #totalTip, #billSplit, #totalAmount{
@@ -134,8 +148,9 @@ button{
     border-radius: 10px;
     border: 1px solid black;
     }
+  
   #showTotalAmount{
-    width:30%;
+    width:35%;
     flex-wrap:wrap;
 }
 }
