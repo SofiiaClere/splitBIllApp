@@ -1,14 +1,14 @@
 body{
-    background-image: url("https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2QlMjBmcmllbmRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background-image: url("https://images.unsplash.com/photo-1599173687303-7e1eb50f1e60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color:rgba(94, 97, 93, 0.9);
+    background-color:rgb(94, 97, 93);
     height: 100vh;
 }
 
 #container {
-    background-color:rgba(94, 97, 93, 0.9);
+    background-color:rgba(243, 149, 196, 0.808);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -17,22 +17,25 @@ body{
     border-radius: 40px;
     color: white;
     position: absolute;
+    margin: 50px;
+    border: 3px solid white;
 }
 
 form{
     position: relative;
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 20px;
     padding: 20px;
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
-    color: #F7DBF0;
+  font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
     align-self: center;
-    font-size: 30px;
+    font-size: 35px;
+    
 }
 
 p, input, select, button, span{
@@ -40,7 +43,7 @@ p, input, select, button, span{
 }
 
 input{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
     padding: 5px;
 
 }
@@ -50,7 +53,7 @@ input{
     border: none;
     border-radius: 10px;
     padding: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 
@@ -60,11 +63,11 @@ input{
     border-radius: 10px;
     border: none;
     margin-top: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #tip{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
     display: none;
 }
 
@@ -73,7 +76,7 @@ input{
 }
 
 #totalTip, #billSplit, #totalAmount{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
     background-color: rgba(147,198,142,0.9);
     margin: 20px;
     padding: 20px;
@@ -87,7 +90,9 @@ button{
 
 @media all and (max-width:800px){
   
-  
+  #container {
+    margin: 5px;
+
   h1{
     font-size:20px;
     align-self:flex-start;
@@ -122,19 +127,15 @@ button{
   width:20%;
   }
   
-  
-#totalTip, #billSplit, #totalAmount{
-    font-family: 'Montserrat', sans-serif;
+  #totalTip, #billSplit, #totalAmount{
     background-color: rgba(147,198,142,0.9);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid black;
-}
+    }
   #showTotalAmount{
     width:30%;
     flex-wrap:wrap;
-  
 }
-  
 }
