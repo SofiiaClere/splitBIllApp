@@ -82,46 +82,54 @@ input{
 }
 
 @media all and (max-width:800px){
+  
+  
   h1{
-    font-size:20px
+    font-size:20px;
+    align-self:flex-start;
+    margin-left:20%;
   }
   
   p, input, select, button, span{
-    font-size: 10px;
+    font-size: 18px;
 }
   
   button{
-  width:55%
+  width:50%
   }
+  
+  #showTotalAmount{
+    width:20%;
   
 }
 
 @media all and (max-width:500px){
 
     h1{
-    font-size:15px
+    font-size:15px;
+    margin-left:10%;
   }
   
   p, input, select, button, span{
-    font-size: 15px;
+    font-size: 14px;
 }
   
-  button,{
-  width:35%
+  button{
+  width:20%;
   }
+  
   
 #totalTip, #billSplit, #totalAmount{
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(147,198,142,0.9);
-    margin: 30px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
     border: 1px solid black;
 }
   #showTotalAmount{
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
     width:30%;
-  }
+  
+}
+  
 }
