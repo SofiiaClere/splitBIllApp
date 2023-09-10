@@ -12,8 +12,8 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 800px;
-  height: 750px;
+  width: 850px;
+  height: 1000px;
   color: white;
   position: absolute;
   margin: 10px;
@@ -32,6 +32,13 @@ form{
   font-family: 'Ubuntu', sans-serif;
   margin: 20px;
   padding: 20px;
+}
+
+.fontBigger{
+  font-size: 25px;
+}
+select, button{
+  font-size: 25px;
 }
 
 h1{
@@ -53,7 +60,11 @@ input{
   border-radius: 10px;
   padding: 5px;
   font-family: 'Ubuntu', sans-serif;
-  
+}
+
+#addTip:hover{
+  background-color: #00ffc3;
+  font-weight:bold;
 }
 
 #btn {
@@ -63,6 +74,12 @@ input{
   border: none;
   margin-top: 10px;
   font-family: 'Ubuntu', sans-serif;
+}
+
+#btn:hover{
+  background-color: #dd0181;
+  color: white;
+  font-weight: bold;
 }
 
 #tip{
@@ -83,34 +100,34 @@ font-family: 'Ubuntu', sans-serif;
   border: 1px solid white;
 }
 
-button{
-width:70%;
+button, select{
+width:80%;
 }
 
 @media all and (max-width:800px){
 
-#container{
-  margin:15px;
-  width: 700px;
-  height: 900px;
-}
+  #container{
+    margin:15px;
+    width: 700px;
+    height: 900px;
+  }
 
-h1{
-  font-size:20px;
-  align-self:flex-start;
-  margin-left:20%;
-}
+  h1{
+    font-size:20px;
+    align-self:flex-start;
+    margin-left:20%;
+  }
 
-p, input, select, button, span{
-  font-size: 18px;
-}
+  p, input, select, button, span{
+    font-size: 18px;
+  }
 
-button{
-width:50%
-}
+  button, select{
+    width:50%;
+  }
 
-#showTotalAmount{
-  width:20%;
+  #showTotalAmount{
+    width:20%;
 }
 
 }
@@ -132,7 +149,7 @@ p, input, select, button, span{
   font-size: 14px;
 }
 
-button{
+button,select{
 width:30%;
 }
 
